@@ -705,5 +705,7 @@ Lembre-se: mantenha **ambos** os servidores rodando simultaneamente! 🔄
 - Cleber Alves Guedes
 - Daniel Caresma Silva
 - Gabriel Koch Fodi
+- Henrique Willemann
 - Jefferson Alves de Souza
+- João Wanderley da Silva Neto
 - Renan Leite Cardoso
