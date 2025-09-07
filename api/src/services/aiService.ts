@@ -1,16 +1,12 @@
-import OpenAI from "openai";
 import type { AISearchRequest } from "../types/index.js";
 import type { Medicine } from "../db/schema.js";
 
 export class AIService {
-  private openai: OpenAI | null = null;
+  private openai: any = null;
 
   constructor() {
     const apiKey = process.env.OPENAI_API_KEY;
     // In test environment, don't initialize OpenAI if key is clearly a test key
-    if (apiKey && !apiKey.includes("test-key") && !apiKey.includes("mock")) {
-      this.openai = new OpenAI({ apiKey });
-    }
   }
 
   async validateMedicine(
