@@ -67,11 +67,9 @@ function Register() {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-blue-600 mb-2">iFound</h1>
-          <h2 className="text-2xl font-bold text-gray-900">
-            Create your account
-          </h2>
+          <h2 className="text-2xl font-bold text-gray-900">Crie sua conta</h2>
           <p className="mt-2 text-sm text-gray-600">
-            Start tracking your medicines today
+            Comece a monitorar seus medicamentos hoje mesmo
           </p>
         </div>
       </div>
@@ -84,7 +82,7 @@ function Register() {
                 htmlFor="name"
                 className="block text-sm font-medium text-gray-700"
               >
-                Full Name
+                Nome Completo
               </label>
               <div className="mt-1">
                 <input
@@ -108,7 +106,7 @@ function Register() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
               >
-                Email address
+                Email
               </label>
               <div className="mt-1">
                 <input
@@ -132,7 +130,7 @@ function Register() {
                 htmlFor="password"
                 className="block text-sm font-medium text-gray-700"
               >
-                Password
+                Senha
               </label>
               <div className="mt-1 relative">
                 <input
@@ -161,8 +159,8 @@ function Register() {
                 </p>
               )}
               <p className="mt-1 text-xs text-gray-500">
-                Password must contain uppercase, lowercase, number, and special
-                character
+                A senha deve conter letras maiúsculas, minúsculas, números e
+                caracteres especiais
               </p>
             </div>
 
@@ -185,12 +183,12 @@ function Register() {
 
             <div className="text-center">
               <p className="text-sm text-gray-600">
-                Already have an account?{" "}
+                Já tem uma conta?{" "}
                 <Link
                   to="/login"
                   className="font-medium text-blue-600 hover:text-blue-500"
                 >
-                  Sign in
+                  Entrar
                 </Link>
               </p>
             </div>

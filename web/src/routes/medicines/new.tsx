@@ -35,9 +35,12 @@ function NewMedicine() {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">Add New Medicine</h1>
+        <h1 className="text-2xl font-bold text-gray-900">
+          Adicionar novo Medicamento
+        </h1>
         <p className="text-gray-600 mt-1">
-          Fill in the details below to add a new medicine to your inventory.
+          Preencha os detalhes abaixo para adicionar um novo medicamento ao seu
+          inventário.
         </p>
       </div>
 

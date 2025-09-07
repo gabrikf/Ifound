@@ -36,7 +36,10 @@ export const MedicineCard = ({
       return { text: "Expired", color: "text-red-600 bg-red-50" };
     }
     if (isExpiringSoon(medicine.expiryDate)) {
-      return { text: "Expiring Soon", color: "text-orange-600 bg-orange-50" };
+      return {
+        text: "Próximo ao vencimento",
+        color: "text-orange-600 bg-orange-50",
+      };
     }
     return null;
   };
@@ -91,7 +94,7 @@ export const MedicineCard = ({
 
           <div className="flex items-center text-sm text-gray-500">
             <Package className="w-4 h-4 mr-2" />
-            {medicine.quantity} unit{medicine.quantity !== 1 ? "s" : ""}
+            {medicine.quantity} unidade{medicine.quantity !== 1 ? "s" : ""}
           </div>
 
           {medicine.expiryDate && (
@@ -104,7 +107,7 @@ export const MedicineCard = ({
                     : "text-gray-500"
                 }
               >
-                Expires: {formatDate(medicine.expiryDate)}
+                Vencimento: {formatDate(medicine.expiryDate)}
               </span>
             </div>
           )}
@@ -123,7 +126,7 @@ export const MedicineCard = ({
         {medicine.notes && (
           <div className="mt-3 pt-3 border-t border-gray-100">
             <p className="text-xs text-gray-500 line-clamp-2">
-              <strong>Notes:</strong> {medicine.notes}
+              <strong>Anotações:</strong> {medicine.notes}
             </p>
           </div>
         )}

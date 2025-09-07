@@ -25,7 +25,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
-          <p className="mt-4 text-gray-600">Loading...</p>
+          <p className="mt-4 text-gray-600">Carregando...</p>
         </div>
       </div>
     );
@@ -38,8 +38,8 @@ export const Layout = ({ children }: LayoutProps) => {
 
   const navigation = [
     { name: "Home", href: "/", icon: Home },
-    { name: "Medicines", href: "/medicines", icon: Pill },
-    { name: "Add Medicine", href: "/medicines/new", icon: Plus },
+    { name: "Medicamentos", href: "/medicines", icon: Pill },
+    { name: "Adicionar Medicamento", href: "/medicines/new", icon: Plus },
   ];
 
   return (
@@ -142,7 +142,7 @@ export const Layout = ({ children }: LayoutProps) => {
               className="flex items-center w-full px-2 py-2 text-sm text-red-600 hover:bg-red-50 rounded-md transition-colors"
             >
               <LogOut className="w-4 h-4 mr-3" />
-              Logout
+              Sair
             </button>
           </div>
         </div>

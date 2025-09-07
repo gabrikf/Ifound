@@ -74,10 +74,10 @@ function Dashboard() {
       {/* Welcome Section */}
       <div className="mb-8">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-          Welcome back, {user?.name}!
+          Bem-vindo, {user?.name}!
         </h1>
         <p className="text-gray-600">
-          Here's an overview of your medicine inventory.
+          Aqui está uma visão geral do seu estoque de medicamentos.
         </p>
       </div>
 
@@ -90,7 +90,7 @@ function Dashboard() {
             </div>
             <div className="ml-4">
               <p className="text-sm font-medium text-gray-600">
-                Total Medicines
+                Total de Medicamentos
               </p>
               <p className="text-2xl font-bold text-gray-900">
                 {totalMedicines}
@@ -105,7 +105,9 @@ function Dashboard() {
               <Calendar className="w-6 h-6 text-orange-600" />
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-600">Expiring Soon</p>
+              <p className="text-sm font-medium text-gray-600">
+                Próximo ao vencimento
+              </p>
               <p className="text-2xl font-bold text-orange-600">
                 {expiringSoon}
               </p>
@@ -119,7 +121,7 @@ function Dashboard() {
               <Calendar className="w-6 h-6 text-red-600" />
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-600">Expired</p>
+              <p className="text-sm font-medium text-gray-600">Vencidos</p>
               <p className="text-2xl font-bold text-red-600">
                 {expiredMedicines}
               </p>
@@ -133,7 +135,7 @@ function Dashboard() {
               <TrendingUp className="w-6 h-6 text-green-600" />
             </div>
             <div className="ml-4">
-              <p className="text-sm font-medium text-gray-600">Categories</p>
+              <p className="text-sm font-medium text-gray-600">Categorias</p>
               <p className="text-2xl font-bold text-gray-900">
                 {Object.keys(categories).length}
               </p>
@@ -146,7 +148,7 @@ function Dashboard() {
         {/* Top Categories */}
         <div className="bg-white rounded-lg shadow-sm p-6">
           <h2 className="text-lg font-semibold text-gray-900 mb-4">
-            Top Categories
+            Principais categorias
           </h2>
           <div className="space-y-3">
             {topCategories.map(([category, count]) => (
@@ -162,7 +164,7 @@ function Dashboard() {
             ))}
             {topCategories.length === 0 && (
               <p className="text-gray-500 text-center py-4">
-                No medicines added yet
+                Nenhum medicamento adicionado ainda
               </p>
             )}
           </div>
@@ -171,7 +173,7 @@ function Dashboard() {
         {/* Recent Medicines */}
         <div className="bg-white rounded-lg shadow-sm p-6">
           <h2 className="text-lg font-semibold text-gray-900 mb-4">
-            Recently Added
+            Adicionado Recentemente
           </h2>
           <div className="space-y-3">
             {recentMedicines.map((medicine) => (
@@ -195,7 +197,7 @@ function Dashboard() {
             ))}
             {recentMedicines.length === 0 && (
               <p className="text-gray-500 text-center py-4">
-                No medicines added yet
+                Nenhum medicamento adicionado ainda
               </p>
             )}
           </div>

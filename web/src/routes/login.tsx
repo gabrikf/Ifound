@@ -70,10 +70,10 @@ function Login() {
         <div className="text-center">
           <h1 className="text-3xl font-bold text-blue-600 mb-2">iFound</h1>
           <h2 className="text-2xl font-bold text-gray-900">
-            Sign in to your account
+            Entre com sua conta
           </h2>
           <p className="mt-2 text-sm text-gray-600">
-            Track and find your medicines easily
+            Encontre seus medicamentos facilmente
           </p>
         </div>
       </div>
@@ -83,12 +83,12 @@ function Login() {
           {/* Demo credentials info */}
           <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-md">
             <p className="text-sm text-blue-800">
-              <strong>Demo credentials:</strong>
+              <strong>Credenciais de demonstração:</strong>
             </p>
             <p className="text-sm text-blue-700 mt-1">
               Email: test@test.com
               <br />
-              Password: Test123!!!
+              Senha: Test123!!!
             </p>
           </div>
 
@@ -98,7 +98,7 @@ function Login() {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
               >
-                Email address
+                Email
               </label>
               <div className="mt-1">
                 <input
@@ -122,7 +122,7 @@ function Login() {
                 htmlFor="password"
                 className="block text-sm font-medium text-gray-700"
               >
-                Password
+                Senha
               </label>
               <div className="mt-1 relative">
                 <input
@@ -165,18 +165,18 @@ function Login() {
                 className="w-full flex justify-center items-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <LogIn className="w-4 h-4 mr-2" />
-                {isLoading ? "Signing in..." : "Sign in"}
+                {isLoading ? "Entrando..." : "Entrar"}
               </button>
             </div>
 
             <div className="text-center">
               <p className="text-sm text-gray-600">
-                Don't have an account?{" "}
+                Não tem uma conta?{" "}
                 <Link
                   to="/register"
                   className="font-medium text-blue-600 hover:text-blue-500"
                 >
-                  Sign up
+                  Cadastrar
                 </Link>
               </p>
             </div>

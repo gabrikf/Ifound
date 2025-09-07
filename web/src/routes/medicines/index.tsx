@@ -91,10 +91,10 @@ function Medicines() {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
         <div>
           <h1 className="text-2xl font-bold text-gray-900 mb-2">
-            Your Medicines
+            Seus Medicamentos
           </h1>
           <p className="text-gray-600">
-            {filteredMedicines.length} of {medicines.length} medicines
+            {filteredMedicines.length} de {medicines.length} Medicamentos
           </p>
         </div>
         <Link
@@ -102,7 +102,7 @@ function Medicines() {
           className="mt-4 sm:mt-0 inline-flex items-center px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-md transition-colors"
         >
           <Plus className="w-4 h-4 mr-2" />
-          Add Medicine
+          Adicionar medicamento
         </Link>
       </div>
 
@@ -114,7 +114,7 @@ function Medicines() {
             <Search className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Search medicines..."
+              placeholder="Buscar Medicamentos..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -127,7 +127,7 @@ function Medicines() {
             onChange={(e) => setSelectedCategory(e.target.value)}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
-            <option value="">All Categories</option>
+            <option value="">Todas as categorias</option>
             {categories.map((category) => (
               <option key={category} value={category}>
                 {category}
@@ -141,7 +141,7 @@ function Medicines() {
             onChange={(e) => setSelectedLocation(e.target.value)}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           >
-            <option value="">All Locations</option>
+            <option value="">Todos os locais</option>
             {locations.map((location) => (
               <option key={location} value={location}>
                 {location}
@@ -159,7 +159,7 @@ function Medicines() {
               className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
             />
             <label htmlFor="expired-filter" className="text-sm text-gray-700">
-              Expired only
+              Apenas vencidos
             </label>
           </div>
         </div>
@@ -175,7 +175,7 @@ function Medicines() {
             }}
             className="text-sm text-gray-600 hover:text-gray-900"
           >
-            Clear filters
+            Limpar filtros
           </button>
 
           <div className="flex items-center space-x-2">
@@ -210,7 +210,7 @@ function Medicines() {
             <Filter className="w-full h-full" />
           </div>
           <h3 className="text-lg font-medium text-gray-900 mb-2">
-            No medicines found
+            Nenhum medicamento encontrado
           </h3>
           <p className="text-gray-500 mb-6">
             {medicines.length === 0
@@ -222,7 +222,7 @@ function Medicines() {
             className="inline-flex items-center px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-md transition-colors"
           >
             <Plus className="w-4 h-4 mr-2" />
-            Add Your First Medicine
+            Adicione seu primeiro medicamento
           </Link>
         </div>
       ) : (
