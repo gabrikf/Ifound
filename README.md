@@ -2,6 +2,14 @@
 
 Sistema completo para gerenciamento de medicamentos domiciliares, composto por uma API robusta (back-end) e uma aplicação web moderna (front-end) que permite aos usuários catalogar, organizar e acompanhar medicamentos em suas residências.
 
+## 🎬 Apresentação do Projeto
+
+<p align="center">
+   <img  hight="" src="web\src\assets\Adobe Express - Apresentação Ifound - Grupo 17 resized.gif">
+</p>
+
+### **[Visualizar apresentação no YouTube](https://youtu.be/TwG8HINhQVc).**
+
 ## 🏗️ Arquitetura do Projeto
 
 Este é um monorepo com duas aplicações principais:
