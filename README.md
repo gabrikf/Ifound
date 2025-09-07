@@ -2,6 +2,8 @@
 
 Sistema completo para gerenciamento de medicamentos domiciliares, composto por uma API robusta (back-end) e uma aplicação web moderna (front-end) que permite aos usuários catalogar, organizar e acompanhar medicamentos em suas residências.
 
+O iFound! é um aplicativo multiplataforma desenvolvido para auxiliar na gestão de medicamentos, oferecendo mais organização, segurança e conveniência aos usuários. Nosso objetivo é simplificar a rotina de quem depende de diversos remédios, evitando esquecimentos, erros de dosagem e desperdícios. Com uma interface intuitiva, o app permite cadastrar medicamentos, organizar locais de armazenamento e configurar lembretes personalizados. Futuramente, ele contará com funcionalidades avançadas como alertas de vencimento, gerenciamento de múltiplos perfis, integração com dispositivos vestíveis e parcerias com estabelecimentos de saúde. Mais do que um organizador, o iFound! busca promover autonomia, tranquilidade e qualidade de vida para seus usuários.
+
 ## 🎬 Apresentação do Projeto
 
 <p align="center">
@@ -696,3 +698,12 @@ Se ainda tiver problemas:
 4. Depois teste a aplicação web
 
 Lembre-se: mantenha **ambos** os servidores rodando simultaneamente! 🔄
+
+
+# Integrantes iFound!
+
+- Cleber Alves Guedes
+- Daniel Caresma Silva
+- Gabriel Koch Fodi
+- Jefferson Alves de Souza
+- Renan Leite Cardoso
